@@ -6,10 +6,12 @@ const DECREASE = 'counter/DECREASE';
 export const increase = () => ({ type: INCREASE });
 export const decrease = () => ({ type: DECREASE });
 
+// 초기 상태
 const intitialState = {
 	number: 0,
 };
 
+// 리듀서 함수
 function counter(state = intitialState, action) {
 	switch (action.type) {
 		case INCREASE:
