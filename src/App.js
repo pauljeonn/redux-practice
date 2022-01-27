@@ -1,12 +1,12 @@
 import './App.css';
-import Counter from './components/Counter';
+import CounterContainer from './containers/CounterContainer';
 import Todos from './components/Todos';
 
 function App() {
 	return (
 		<div className="App">
 			<h1>REDUX PRACTICE</h1>
-			<Counter number={0} />
+			<CounterContainer number={0} />
 			<hr />
 			<Todos />
 		</div>
